@@ -7,7 +7,7 @@ var express = require('express')
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.engine('.html', ejs.__express);
-app.set('view engine', 'html'); //替换文件扩展名ejs为html
+app.set('view engine', 'html');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
@@ -19,7 +19,7 @@ if (app.get('env') === 'development') {
     app.use(express.errorHandler());
 }
 
-// angular启动页
+//
 app.get('/', function (req, res) {
     res.sendfile('app/index.html');
 });

@@ -1,7 +1,9 @@
 {
   "name": "stabber",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "~3.2.2",
+    "ejs": "~0.8.5"},
   "devDependencies": {
     "grunt": "^0.4.1",
     "grunt-autoprefixer": "^0.7.3",
